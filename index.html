@@ -368,6 +368,51 @@
 				-webkit-animation: flash 2s ease infinite;
 				animation: flash 2s ease infinite;
 			}
+			
+			@-webkit-keyframes pulse
+			{
+				0% {
+				-webkit-transform: scale(1.1);
+				transform: scale(1.1);
+				}
+
+				50% {
+				-webkit-transform: scale(0.8);
+				transform: scale(0.8);
+				}
+
+				100% {
+				-webkit-transform: scale(1.1);
+				transform: scale(1.1);
+				}
+				}
+
+				@keyframes pulse {
+				0% {
+				-webkit-transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				transform: scale(1.1);
+				}
+
+				50% {
+				-webkit-transform: scale(0.8);
+				-ms-transform: scale(0.8);
+				transform: scale(0.8);
+				}
+
+				100% {
+				-webkit-transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				transform: scale(1.1);
+				}
+				}
+
+				.faa-pulse.animated,
+				.faa-pulse.animated-hover:hover,
+				.faa-parent.animated-hover:hover > .faa-pulse {
+				-webkit-animation: pulse 2s linear infinite;
+				animation: pulse 2s linear infinite;
+				}
 
 
 		</style>
@@ -660,8 +705,20 @@
 				Achievements
 			</div>
 			<div class="publication-list">
-				<div class = "row list-new"><i class='fa fa-ravelry fa-pulse'></i>
-					Industrial training at <b>Hindustan Lifecare Ltd</b> during B.Tech
+				<div class = "row list-new"><i class='fa fa-ravelry faa-pulse animated'></i>
+					Completed <b>ME-105: Product development for the developing world</b> course from CALTECH under Prof. K Pickar and Prof. J Issac
+				</div>
+				<div class = "row list-new"><i class='fa fa-ravelry faa-pulse animated'></i>
+					Vantage level certificate in British English fluency from the <b>ESOL centre Cambridge University</b>
+				</div>
+				<div class = "row list-new"><i class='fa fa-ravelry faa-pulse animated'></i>
+					Qualified <b>GATE- Mechanical Engineering</b> in 2014, 2015 and 2016
+				</div>
+				<div class = "row list-new"><i class='fa fa-ravelry faa-pulse animated'></i>
+					<b>MHRD fellowship</b> during M.Tech, 2014-2016
+				</div>
+				<div class = "row list-new"><i class='fa fa-ravelry faa-pulse animated'></i>
+					<b>MHRD fellowship</b> at Indian Institute of Technology (IIT), Kharagpur since July, 2016
 				</div>
 			</div>
 			
