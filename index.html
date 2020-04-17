@@ -143,28 +143,23 @@
 			
 			}
 			
-			a.effect-underline:after
+			a.effect-shine:hover
 			{
-				content: '';
-				position: absolute;
-				left: 0;
-				display: inline-block;
-				height: 1em;
-				width: 100%;
-				border-bottom: 1px solid;
-				margin-top: 10px;
-				opacity: 0;
-				-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-				transition: opacity 0.35s, transform 0.35s;
-				-webkit-transform: scale(0,1);
-				transform: scale(0,1);
+				-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+				-webkit-mask-size: 200%;
+				animation: shine 2s infinite;
 			}
 
-			a.effect-underline:hover:after
+			@-webkit-keyframes shine
 			{
-				opacity: 1;
-				-webkit-transform: scale(1);
-				transform: scale(1);
+				from {
+				-webkit-mask-position: 150%;
+			}
+
+			to
+			{
+				-webkit-mask-position: -50%;
+			}
 			}
 
 		</style>
@@ -221,15 +216,15 @@
 				
 				<div class="publication-list">
 				
-					<div class = "row list-new"><i class="fa fa-cog fa-spin"></i><a href="#" class="effect-underline"> <b>Nitin B</b>, Sandilya P. Structural and thermal analysis of dewar supports for low boil-off long duration storage of cryogenic liquids. <i>Indian Journal of Cryogenics</i>. 2018;43(1):33-9.</a></div>
+					<div class = "row list-new"><i class="fa fa-cog fa-spin"></i><a href="#" class="effect-shine"> <b>Nitin B</b>, Sandilya P. Structural and thermal analysis of dewar supports for low boil-off long duration storage of cryogenic liquids. <i>Indian Journal of Cryogenics</i>. 2018;43(1):33-9.</a></div>
 					
-					<div class = "row list-new"><i class="fa fa-cog fa-spin"></i><a href="#" class="effect-underline"> Virdi PS, <b>Nitin B</b>, Sandilya P, Chakraborty G. Theoretical comparison of thermo-mechanical behavior of a tension rod and a coil as dewar support. <i>Indian Journal of Cryogenics</i>. 2019;44(1):216-21.</a></div>
+					<div class = "row list-new"><i class="fa fa-cog fa-spin"></i><a href="#" class="effect-shine"> Virdi PS, <b>Nitin B</b>, Sandilya P, Chakraborty G. Theoretical comparison of thermo-mechanical behavior of a tension rod and a coil as dewar support. <i>Indian Journal of Cryogenics</i>. 2019;44(1):216-21.</a></div>
 					
-					<div class = "row list-new"><i class="fa fa-cog fa-spin"></i><a href="#" class="effect-underline"> Saha P, <b>Nitin B</b>, Sandilya P. Optimization of the performance of injection cooling system using genetic algorithm. <i>Indian Journal of Cryogenics</i>. 2018;43(1):16-21.</a></div>
+					<div class = "row list-new"><i class="fa fa-cog fa-spin"></i><a href="#" class="effect-shine"> Saha P, <b>Nitin B</b>, Sandilya P. Optimization of the performance of injection cooling system using genetic algorithm. <i>Indian Journal of Cryogenics</i>. 2018;43(1):16-21.</a></div>
 					
-					<div class = "row list-new"><i class="fa fa-cog fa-spin"></i><a href="#" class="effect-underline"> Jayachandran LE, <b>Nitin B</b>, Rao PS. Simulation of the stress regime during grain filling in bamboo reinforced concrete silo. <i>Journal of Stored Products Research</i>. 2019 Sep 1;83:123-9.</a></div>
+					<div class = "row list-new"><i class="fa fa-cog fa-spin"></i><a href="#" class="effect-shine"> Jayachandran LE, <b>Nitin B</b>, Rao PS. Simulation of the stress regime during grain filling in bamboo reinforced concrete silo. <i>Journal of Stored Products Research</i>. 2019 Sep 1;83:123-9.</a></div>
 					
-					<div class = "row list-new"><i class="fa fa-cog fa-spin"></i><a href="#" class="effect-underline"> Ghosh S, <b>Nitin B</b>, Remanan S, Bhattacharjee Y, Ghorai A, Dey T, Das TK, Das NC. A Multifunctional Smart Textile Derived from Merino Wool/Nylon Polymer Nanocomposites as Next Generation Microwave Absorber and Soft Touch Sensor. <i>ACS Applied Materials & Interfaces</i>. 2020 Mar 24.</a></div>
+					<div class = "row list-new"><i class="fa fa-cog fa-spin"></i><a href="#" class="effect-shine"> Ghosh S, <b>Nitin B</b>, Remanan S, Bhattacharjee Y, Ghorai A, Dey T, Das TK, Das NC. A Multifunctional Smart Textile Derived from Merino Wool/Nylon Polymer Nanocomposites as Next Generation Microwave Absorber and Soft Touch Sensor. <i>ACS Applied Materials & Interfaces</i>. 2020 Mar 24.</a></div>
 					
 				</div>
 			</div>
