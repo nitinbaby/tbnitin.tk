@@ -340,6 +340,35 @@
 				transform-origin-y: 35%;
 				transform-origin-z: initial;
 			}
+			
+			@-webkit-keyframes flash
+			{
+				0%, 100%, 50% {
+				opacity: 1;
+				}
+
+				25%, 75% {
+				opacity: 0;
+				}
+				}
+
+				@keyframes flash {
+				0%, 100%, 50% {
+				opacity: 1;
+				}
+
+				25%, 75% {
+				opacity: 0;
+				}
+				}
+
+				.faa-flash.animated,
+				.faa-flash.animated-hover:hover,
+				.faa-parent.animated-hover:hover > .faa-flash {
+				-webkit-animation: flash 2s ease infinite;
+				animation: flash 2s ease infinite;
+			}
+
 
 		</style>
 	</head>
@@ -599,30 +628,30 @@
 			<div class="publication-list">
 				<div class="row">
 					<div class="col-sm-4">
-						<i class="fa fa-superpowers fa-pulse" aria-hidden="true"></i>
+						<i class="fa fa-superpowers faa-flash animated" aria-hidden="true"></i>
 						C++
 					</div>
 					<div class="col-sm-4">
-						<i class="fa fa-superpowers fa-pulse" aria-hidden="true"></i>
+						<i class="fa fa-superpowers faa-flash animated" aria-hidden="true"></i>
 						Fortran
 					</div>
 					<div class="col-sm-4">
-						<i class="fa fa-superpowers fa-pulse" aria-hidden="true"></i>
+						<i class="fa fa-superpowers faa-flash animated" aria-hidden="true"></i>
 						Python
 					</div>
 				</div>
 					
 				<div class="row">
 					<div class="col-sm-4">
-						<i class="fa fa-superpowers fa-pulse" aria-hidden="true"></i>
+						<i class="fa fa-superpowers faa-flash animated" aria-hidden="true"></i>
 						C
 					</div>
 					<div class="col-sm-4">
-						<i class="fa fa-superpowers fa-pulse" aria-hidden="true"></i>
+						<i class="fa fa-superpowers faa-flash animated" aria-hidden="true"></i>
 						Php
 					</div>
 					<div class="col-sm-4">
-						<i class="fa fa-superpowers fa-pulse" aria-hidden="true"></i>
+						<i class="fa fa-superpowers faa-flash animated" aria-hidden="true"></i>
 						Lua
 					</div>
 				</div>
@@ -631,7 +660,9 @@
 				Achievements
 			</div>
 			<div class="publication-list">
-			
+				<div class = "row list-new"><i class='fa fa-ravelry fa-pulse'></i>
+					Industrial training at <b>Hindustan Lifecare Ltd</b> during B.Tech
+				</div>
 			</div>
 			
 			<div class = "bottom-banner">
