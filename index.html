@@ -833,15 +833,15 @@
 	</body>
 
 <script>
-    GitHubCalendar(".calendar", "your-username");
+    GitHubCalendar(".calendar", "tbnitin");
 
     // or enable responsive functionality:
-    GitHubCalendar(".calendar", "your-username", { responsive: true });
+    GitHubCalendar(".calendar", "tbnitin", { responsive: true });
 
     // Use a proxy
-    GitHubCalendar(".calendar", "your-username", {
+    GitHubCalendar(".calendar", "tbnitin", {
        proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=${username}`)
+         return fetch(`https://your-proxy.com/github?user=${tbnitin}`)
        }
     }).then(r => r.text())
 </script>
